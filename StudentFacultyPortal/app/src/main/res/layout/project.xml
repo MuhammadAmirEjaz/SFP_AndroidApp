@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+<RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_description_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_project_label"
+            android:text="Title:"
+            android:layout_below="@id/linearlayout_header"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_newsfeedtitleshow"
+            android:text="FYP"
+            android:layout_below="@id/tv_title_project_label"
+            android:layout_toRightOf="@id/tv_title_project_label"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_project"
+            android:text="Description"
+            android:layout_below="@id/tv_title_project_label"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_projectshow"
+            android:text="Final year project"
+            android:layout_below="@id/tv_title_project"
+            android:layout_toRightOf="@id/tv_title_project"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type_project_label"
+            android:text="Type:"
+            android:layout_below="@id/tv_title_projectshow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type_project"
+            android:text="Development"
+            android:layout_below="@id/tv_type_project_label"
+            android:layout_toRightOf="@id/tv_type_project_label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_initiatedby_project_label"
+            android:text="InitiatedBy"
+            android:layout_below="@id/tv_type_project"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_initiatedby_project"
+            android:text="InitiatedBy"
+            android:layout_below="@id/tv_type_project"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/project_description_rl"
+            android:orientation="horizontal"
+            android:id="@+id/ll_bottomnewsfeed"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UpVote(0)"
+                android:id="@+id/btn_upvotenewsfeed"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DownVote"
+                android:id="@+id/btn_Downvotenewsfeed"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bid"
+                android:id="@+id/btn_bidnewsfeed"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

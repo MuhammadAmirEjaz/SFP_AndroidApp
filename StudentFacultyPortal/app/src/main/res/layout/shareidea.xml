@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareideaActivity">
+
+    <include layout="@layout/header"></include>
+    <RelativeLayout
+        android:layout_below="@id/linearlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/linearlayout_header"
+            android:text="Title:"
+            android:layout_marginTop="100dp"
+            />
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linearlayout_header"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="20dp"
+            android:text="Type:"
+            />
+        <CheckBox android:id="@+id/cb_development"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Development"
+            android:layout_below="@id/tv_type"
+            android:layout_toRightOf="@id/tv_type"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox android:id="@+id/cb_Researchbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Research Base"
+            android:layout_below="@id/cb_development"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_type"/>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/cb_Researchbase"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/ed_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_description"
+            android:layout_toRightOf="@+id/tv_description"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:id="@+id/btn_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ed_description"
+            android:text="Upload File"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:id="@+id/tv_addmembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Members:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/btn_description"
+            />
+        <EditText
+            android:id="@+id/ed_addmembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_addmembers"
+            android:layout_toRightOf="@+id/tv_addmembers"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
