@@ -21,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.userprofilewall);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mAdapter = new ProjectAdapter(projectList);
         //recyclerView.setHasFixedSize(true);

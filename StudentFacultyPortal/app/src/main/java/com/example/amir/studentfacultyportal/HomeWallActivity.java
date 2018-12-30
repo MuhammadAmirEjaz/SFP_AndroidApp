@@ -1,4 +1,5 @@
 package com.example.amir.studentfacultyportal;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -116,6 +117,21 @@ public class HomeWallActivity extends AppCompatActivity {
         projectList.add(project);
         mAdapter.notifyDataSetChanged();
     }
+    public void ShareIdea(android.view.View view)
+    {
+        Toast.makeText(HomeWallActivity.this, "SharIdea Clicked", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this,ShareIdeaActivity.class);
+        startActivity(intent);
+
+    }
+    public void UserProfile(android.view.View view)
+    {
+        Toast.makeText(HomeWallActivity.this, "UserProfile", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this,ProfileActivity.class);
+        startActivity(intent);
+
+    }
+
 
 }
 
