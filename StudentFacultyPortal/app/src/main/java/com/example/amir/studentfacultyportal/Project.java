@@ -6,11 +6,11 @@ public class Project {
     public String type;
     public String IntiatedBy;
 
-    public Project(String title, String description, String type, String intiatedBy) {
+    public Project(String title, String description, String type,String InitiatedBy) {
         Title = title;
         Description = description;
         this.type = type;
-        IntiatedBy = intiatedBy;
+        this.IntiatedBy = InitiatedBy;
     }
 
     public String getTitle() {
@@ -44,5 +44,4 @@ public class Project {
     public void setIntiatedBy(String intiatedBy) {
         IntiatedBy = intiatedBy;
     }
-
     }
