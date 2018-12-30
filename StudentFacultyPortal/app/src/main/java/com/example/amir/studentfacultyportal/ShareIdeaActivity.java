@@ -73,8 +73,8 @@ public class ShareIdeaActivity extends AppCompatActivity {
                             public void onResponse(JSONObject response) {
                                 try {
                                     //Process os success response
-                                    Log.e("isResponse", response.getString("result"));
-                                } catch (JSONException e) {
+                                    Log.e("isResponse", "Success");
+                                } catch (Exception e) {
                                     e.printStackTrace();
                                 }
                             }

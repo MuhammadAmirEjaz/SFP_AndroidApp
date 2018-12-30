@@ -13,18 +13,9 @@ public class HeaderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.header);
-        /*Button btn = findViewById(R.id.btn_shareyouridea);
-        btn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(HeaderActivity.this, "SharIdea Clicked", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(v.getContext(),ShareIdeaActivity.class);
-                startActivity(intent);
-
-            }
-        });*/
 
     }
-   /* public void ShareIdea(android.view.View view)
+    public void ShareIdea(android.view.View view)
     {
         Toast.makeText(HeaderActivity.this, "SharIdea Clicked", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this,ShareIdeaActivity.class);
@@ -37,7 +28,7 @@ public class HeaderActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ProfileActivity.class);
         startActivity(intent);
 
-    }*/
+    }
 
 
 }
