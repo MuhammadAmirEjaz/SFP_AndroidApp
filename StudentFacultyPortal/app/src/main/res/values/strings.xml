@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">StudentFacultyPortal</string>
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password </string>
     <string name="action_sign_in">Sign In</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -22,5 +22,5 @@
     <string name="home_header_btn">Home</string>
     <string name="profile_header_btn">Profile</string>
     <string name="logout_header_btn">logout</string>
-
+    <string name="base_url">http://192.168.43.79:8888/api/</string>
 </resources>

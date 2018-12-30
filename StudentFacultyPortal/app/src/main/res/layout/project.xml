@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:paddingRight="@dimen/title_paddig_project"
             android:text="Title:"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
@@ -64,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_description_projectshow"
             android:layout_margin="@dimen/text_margin"
+            android:paddingRight="@dimen/type_padding_project"
             android:text="Type:"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
@@ -84,6 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_type_project"
             android:layout_margin="@dimen/text_margin"
+            android:paddingRight="6dp"
             android:text="InitiatedBy"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
@@ -108,7 +111,6 @@
         android:layout_below="@id/project_description_rl"
         android:orientation="horizontal"
         android:id="@+id/ll_bottomnewsfeed"
-        android:weightSum="3"
         >
 
         <Button
@@ -116,25 +118,23 @@
             android:layout_height="wrap_content"
             android:text="UpVote(0)"
             android:id="@+id/btn_upvotenewsfeed"
-            android:layout_weight="1"
             android:background="@color/colorButton"
             android:layout_margin="@dimen/button_margin"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DownVote"
+            android:text="DownVote(0)"
             android:id="@+id/btn_Downvotenewsfeed"
-            android:layout_weight="1"
             android:background="@color/colorButton"
             android:layout_margin="@dimen/button_margin"
+            android:padding="10dp"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bid"
+            android:text="Bid(0)"
             android:id="@+id/btn_bidnewsfeed"
-            android:layout_weight="1"
             android:background="@color/colorButton"
             android:layout_margin="@dimen/button_margin"
             />
