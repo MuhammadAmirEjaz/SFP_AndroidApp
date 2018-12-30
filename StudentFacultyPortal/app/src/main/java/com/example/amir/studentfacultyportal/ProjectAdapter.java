@@ -27,8 +27,8 @@ private List<Project> projectList;
 
     public MyViewHolder(View view) {
         super(view);
-        Title = (TextView) view.findViewById(R.id.tv_title_project);
-        Description= (TextView) view.findViewById(R.id.tv_title_project);
+        Title = (TextView) view.findViewById(R.id.tv_newsfeedtitleshow);
+        Description= (TextView) view.findViewById(R.id.tv_description_projectshow);
         Type = (TextView) view.findViewById(R.id.tv_type_project);
         InitiatedBy=(TextView) view.findViewById(R.id.tv_initiatedby_project);
         DownVote=(Button) view.findViewById(R.id.btn_upvotenewsfeed);
