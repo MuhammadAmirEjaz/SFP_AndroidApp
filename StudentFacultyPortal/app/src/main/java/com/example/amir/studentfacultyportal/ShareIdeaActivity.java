@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ShareIdeaActivity extends AppCompatActivity implements View.OnClickListener{
+public class ShareIdeaActivity extends AppCompatActivity {
 
 
     Project project;
@@ -24,21 +24,24 @@ public class ShareIdeaActivity extends AppCompatActivity implements View.OnClick
     EditText etDescription;
     Button btnSubmit;
     CheckBox cbType;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shareidea);
-        etTitle=(EditText)findViewById(R.id.et_title_shareidea);
-        etDescription=(EditText)findViewById(R.id.et_description_shareidea);
-        cbType=(CheckBox)
-        btnSubmit= (Button)findViewById(R.id.btn_submit_shareidea);
+        etTitle = (EditText) findViewById(R.id.title);
+        etDescription = (EditText) findViewById(R.id.et_description_shareidea);
+        /*cbType=(CheckBox)*/
+        btnSubmit = (Button) findViewById(R.id.submit_shareidea_button);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(ShareIdeaActivity.this, "SharIdea Clicked", Toast.LENGTH_LONG).show();
+                project.Title = etTitle.getText().toString();
+                project.Description = etDescription.getText().toString();
 
-    }
-
-    @Override
-    public void onClick(View v) {
-            project.Title=etTitle.getText().toString();
-            project.Description=etDescription.getText().toString();
-            project.type=
+                Toast.makeText(ShareIdeaActivity.this, project.getTitle(), Toast.LENGTH_LONG).show();
+                /*project.type=*/
+            }
+        });
     }
 }

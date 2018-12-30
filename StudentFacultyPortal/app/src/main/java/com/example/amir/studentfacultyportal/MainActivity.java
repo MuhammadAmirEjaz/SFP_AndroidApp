@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn_login=(Button)findViewById(R.id.btn_Submit);
-        EditText et_username=(EditText)findViewById(R.id.et_username);
+        final Bundle loginInfo=new Bundle();
+       /* EditText et_username=(EditText)findViewById(R.id.et_username);
         EditText et_password=(EditText)findViewById(R.id.et_password);
         String username=et_username.getText().toString();
         String password=et_password.getText().toString();
-        final Bundle loginInfo=new Bundle();
+
         loginInfo.putString("username",username);
-        loginInfo.putString("password",password);
+        loginInfo.putString("password",password);*/
         btn_login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
