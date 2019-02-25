@@ -1,2 +1,2 @@
 # SFP_AndroidApp
-Android App of Final Year "Project Student Faculty Portal" in progress
+Android App for "Student Faculty Interaction Portal"
